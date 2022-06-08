@@ -1,0 +1,52 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\vieww12000\viewh15840\viewkind0
+\deftab720
+\pard\pardeftab720\sl276\slmult1\sa200\partightenfactor0
+
+\f0\fs22 \cf0 VOOR DE LOGIN:\
+\
+CREATE TABLE IF NOT EXISTS `accounts` (\
+	`id` int(11) NOT NULL AUTO_INCREMENT,\
+  	`username` varchar(50) NOT NULL,\
+  	`password` varchar(255) NOT NULL,\
+  	`email` varchar(100) NOT NULL,\
+    PRIMARY KEY (`id`)\
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;\
+\
+INSERT INTO `accounts` (`id`, `username`, `password`, `email`) VALUES (1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'test@test.com');\
+\
+\
+VOOR DE CRUD:\
+\
+CREATE TABLE employees (\
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,\
+    name VARCHAR(100) NOT NULL,\
+    address VARCHAR(255) NOT NULL,\
+    salary INT(10) NOT NULL\
+);\
+\
+\
+\pard\pardeftab720\sl276\slmult1\sa200\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.tutorialrepublic.com/php-tutorial/php-sessions.php#:~:text=Starting%20a%20PHP%20Session,session%20ID%20for%20the%20user"}}{\fldrslt \cf0 https://www.tutorialrepublic.com/php-tutorial/php-sessions.php#:~:text=Starting%20a%20PHP%20Session,session%20ID%20for%20the%20user}}.\
+\
+\
+OEFEN\
+\
+CREATE TABLE IF NOT EXISTS `account` (\
+	`id` int(11) NOT NULL AUTO_INCREMENT,\
+  	`username` varchar(50) NOT NULL,\
+  	`password` varchar(255) NOT NULL,\
+  	`email` varchar(100) NOT NULL,\
+	`telefoon` int(100) NOT NULL,\
+	`datum` varchar(100) NOT NULL,\
+	`geslacht` varchar(100) NOT NULL,\
+    PRIMARY KEY (`id`)\
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;\
+\
+\
+\
+INSERT INTO `accounts` (`id`, `Naam`, `Telefoonnummer`, `Email`, `Geboortedatum`, `Geslacht`, `Wachtwoord`) VALUES (1, 'test', \'910612345678\'92, \'91test@test.com\'92, \'9118 5 2003\'92, \'91man\'92, \'91test\'92);\
+}
